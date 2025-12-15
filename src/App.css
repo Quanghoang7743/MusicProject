@@ -1,0 +1,127 @@
+/* Custom Dropdown Styling - light theme */
+.ant-dropdown {
+  background: transparent !important;
+}
+
+.ant-dropdown .ant-dropdown-menu {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid rgba(226,232,240,1) !important; /* gray-200 */
+  border-radius: 12px !important;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.08) !important;
+  padding: 6px !important;
+}
+
+.ant-dropdown .ant-dropdown-menu-item {
+  color: #0f172a !important;
+  border-radius: 8px !important;
+  padding: 10px 16px !important;
+  margin: 2px 0 !important;
+}
+
+.ant-dropdown .ant-dropdown-menu-item:hover {
+  background: #f1f5f9 !important; /* gray-100 */
+}
+
+.ant-dropdown .ant-dropdown-menu-item-disabled {
+  opacity: 0.6 !important;
+  background: transparent !important;
+}
+
+.ant-dropdown .ant-dropdown-menu-item-disabled:hover {
+  background: transparent !important;
+}
+
+.ant-dropdown .ant-dropdown-menu-item-divider {
+  background: rgba(226,232,240,1) !important; /* gray-200 */
+  margin: 8px 0 !important;
+}
+
+/* Dark blue user dropdown (overrides the light theme above) */
+.user-dropdown .ant-dropdown-menu {
+  background: linear-gradient(180deg,#092e56,#072037) !important; /* dark blue */
+  color: #ffffff !important;
+  border: 1px solid rgba(6,40,70,0.25) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 30px rgba(2,6,23,0.35) !important;
+  padding: 6px !important;
+}
+
+.user-dropdown .ant-dropdown-menu-item {
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  padding: 10px 16px !important;
+  margin: 2px 0 !important;
+}
+
+.user-dropdown .ant-dropdown-menu-item:hover {
+  background: rgba(255,255,255,0.06) !important;
+}
+
+.user-dropdown .ant-dropdown-menu-item-disabled {
+  opacity: 1 !important;
+  background: transparent !important;
+}
+
+.user-dropdown .ant-dropdown-menu-item-divider {
+  background: rgba(255,255,255,0.06) !important;
+  margin: 8px 0 !important;
+}
+
+/* Custom Scrollbar for Search Dropdown */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(51, 65, 85, 0.3);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 188, 212, 0.5);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 188, 212, 0.7);
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 188, 212, 0.5) rgba(51, 65, 85, 0.3);
+}
+
+/* Global App Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a1929;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #1e3a5f, #0f2744);
+  border-radius: 6px;
+  border: 2px solid #0a1929;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #2d5a8f, #1e3a5f);
+  border-color: #0f2744;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(180deg, #3d6fa0, #2d5a8f);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1e3a5f #0a1929;
+}

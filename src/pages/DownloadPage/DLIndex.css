@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+:root {
+  --primary: #21A8C5;
+  --accent: #39C6E5;
+  --muted: #6B7280;
+}
+
+.download-page {
+  font-family: 'Inter', sans-serif;
+  background: #FFFFFF;
+  color: #111827;
+}
+
+.text-primary { color: var(--primary); }
+.text-accent { color: var(--accent); }
+.hover\:text-accent:hover { color: var(--accent); }
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg,var(--accent),var(--primary));
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(33,168,197,0.18);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.cta-button:hover { transform: translateY(-3px); }
+
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+  font-weight: 600;
+}
+.secondary-button:hover { background: var(--primary); color: #fff; }
+
+.download-cards .card { background: #fff; border-color: #E5E7EB; }
+.download-cards .card .font-semibold { color: #111827; }
+
+@media (max-width: 768px) {
+  .download-page { padding-left: 1rem; padding-right: 1rem; }
+  .download-cards { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+}
+
+.figma-canvas {
+  width: 2998px; /* Figma width */
+  height: 3238px; /* Figma height */
+  background: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.102);
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.figma-canvas img { width: 100%; height: auto; }
+
+/* Dark Download Page Styles */
+.download-page-dark { background: linear-gradient(180deg,#071027 0%, #071427 100%); }
+.container { max-width: 1200px; }
+.sidebar { background: linear-gradient(180deg,#081727,#071327); border: 1px solid rgba(255,255,255,0.02); }
+.sidebar-btn { padding: 0.5rem 0.75rem; text-align: left; border-radius: 8px; color: #9fb7c7; background: transparent; }
+.sidebar-btn.active { background: rgba(57,198,229,0.06); color: var(--accent); }
+.search-input { background: rgba(255,255,255,0.03); padding: 0.5rem 0.75rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03); color: #dbeafb; }
+.btn-outline { background: transparent; border: 1px solid rgba(255,255,255,0.06); padding: 0.5rem 0.75rem; border-radius: 8px; color: #dbeafb; }
+.btn-primary { background: linear-gradient(90deg,var(--accent),var(--primary)); color: #fff; padding: 0.5rem 0.75rem; border-radius: 8px; }
+.bg-card { background: linear-gradient(180deg,#071827,#051426); }
+.card-media { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.03); }
+.subscribe-input { background: rgba(255,255,255,0.03); padding: 0.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.03); color: #dbeafb; }
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .container { padding-left: 1rem; padding-right: 1rem; }
+  .sidebar { display: none; }
+}
+
+
+  
